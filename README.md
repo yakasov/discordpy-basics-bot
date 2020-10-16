@@ -41,7 +41,16 @@ Command | Function
 Good Bot, Bad Bot | (no prefix required) test and see
 GETPFP [user-id, anyone] | get the profile picture of the given user ID. Anyone will pick randomly
 SETNICK [nickname] | set the bot's nickname
+SETSTATUS [status] | set the bot's status
 JOIN | join your voice channel
 SINGYT [url] | play audio from a YouTube URL
 STOP | stop playing audio
 DISCONNECT | leave the voice channel
+
+Additionally, there are commands that only the user specified with ADMIN_ID can use:
+
+Command | Function
+------- | --------
+GETALL | will send the profile picture of everyone in the server to the channel the command was used in
+RESTART | restart the bot - can be used to test new code
+STOP | stop the bot
